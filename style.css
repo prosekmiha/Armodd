@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'poppins', 'sans serif';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+
+
+
+.container {
+    max-width: 1600px;
+    margin: auto;
+    border-bottom: 1px solid grey;
+}
+
+.logo {
+    height: 40px;
+    
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.navbar {
+    display: flex;
+    column-gap: 4rem;
+    
+}
+
+.nav-link {
+    padding: 8px 8px;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+header ul {
+    list-style: none;
+}
+
+.home-content{
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7rem;
+    
+}
+
+.home{
+    margin-top: 3rem;
+    width: 100%;
+
+}
+
+.home-img img{
+    
+    padding-top: 3rem;
+    width: 500px;
+}
+
+.home h1{
+    padding-right: 150px;
+    font-size: 4rem;
+} 
+
+.home p{
+    padding-top: 20px;
+    font-size: 1.5rem;
+    color: #373737;
+}
+
+#desc {
+    display: flex;
+    margin-top: 4rem;
+    margin-bottom: 15rem;
+    justify-content: center;
+}
+
+.desc-content h1{
+    position: relative;
+    font-size: 2.2rem;
+    margin: 20px 50px;
+}
+
+.desc-content p, ul{
+    position: relative;
+    font-size: 1.5rem;
+    margin: 0px 50px;
+}
+
+.desc-content img{
+    position: relative;
+    margin: 0px 50px;
+    width: 500px;
+}
+
+#descimg {
+    position: relative;
+    
+}
+
+
+.spec3img {
+    transform: rotateY(180deg);
+}
+
+.scroll-top{
+    position: fixed;
+    bottom: 4rem;
+    right: 3rem;
+    display: none;
+}
+
+.scroll-top .bx{
+    padding: 10px;
+    font-size: 1.3rem;
+    color: white;
+    background: black;
+    border-radius: 0.2rem;
+}
+
+.scroll-top .bx:hover{
+    background: #373737;
+    transition: 0.3 all linear;
+}
+
+.specifikacije {
+    
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 5rem;
+    
+}
+
+.specifikacije h2{
+    position: relative;
+    top: 4vh;
+    left: 5vh;
+    font-size: 2rem;
+}
+
+.specifikacije th{
+    line-height: 6vh;
+    float: left;
+    font-size: 2.5vh;
+}
+
+.specifikacije td{
+    line-height: 3vh; 
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.specifikacije table{
+    position: relative;
+    top: 5vh;
+    left: 5vh;
+    width: 150vh;
+    font-size: 1.2rem;    
+}
+
+.contact {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.kotakt{
+    width: 500px;
+    
+}
+
+.kontakt form{
+    
+    width: 600px;
+    
+    
+}
+
+.kontakt h2 {
+    display: flex;
+    padding-top: 3rem;
+    padding-bottom: 3vh;
+    font-size: 2rem;
+}
+
+
+.contact-form{
+    margin: auto;
+    width: 100%;
+    display: grid;
+    row-gap: 1rem;
+    margin-bottom: 5rem;
+    
+}
+
+.contact-form label{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.contact-form input{
+    height: 2.2rem;
+ 
+}
+
+.contact-btn{
+    width: 150px;
+}
+
+
+
+@media (max-width: 1500px) {
+    .home h1 {
+        font-size: 3rem;
+    }
+    .specs-table {
+        width: 1200px;
+    }
+}
+
+@media (max-width: 1350px) {
+    .home h1 {
+        font-size: 2.5rem;
+    }
+    .home-img img {
+        width: 400px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .home h1 {
+        font-size: 2.2rem;
+    }
+    .home-img img {
+        width: 320px;
+    }
+    #desc {
+        flex-direction: column;         
+    }
+    .container{
+        max-width: 900px;
+    }
+    .specs-table {
+        width: 800px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .home h1 {
+        font-size: 2rem;
+        padding: 0px 100px 0 0;
+    }
+    .home p {
+        font-size: 1rem;
+    }
+    .home-img img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 800px) {
+    .home h1 {
+        font-size: 2rem;
+        padding: 0px 100px 0 0;
+    }
+    .home p {
+        font-size: 1rem;
+    }
+    .home-img img {
+        width: 300px;
+    }
+    .home-content{
+        flex-direction: column;
+    }
+    #desc {
+        flex-direction: column;
+        
+    }
+}
+
+
+
